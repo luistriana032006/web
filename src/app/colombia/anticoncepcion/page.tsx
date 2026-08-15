@@ -1,70 +1,124 @@
-import { ShieldCheck, Lightbulb, CircleCheck } from "lucide-react";
+import { ShieldCheck, MapPin, Lightbulb, Phone } from "lucide-react";
 import { TopicShell } from "@/components/topic-shell";
+
+type Contacto = {
+  entidad: string;
+  detalle: string;
+  telefono?: string;
+  href?: string;
+};
+
+const CONTACTOS: Contacto[] = [
+  {
+    entidad: "Cualquier EPS",
+    detalle:
+      "Línea de atención al usuario de tu EPS (está en tu carné o en la app de tu EPS) o presencialmente en tu IPS primaria",
+  },
+  {
+    entidad: "Profamilia (para todos, con o sin EPS)",
+    detalle: "Línea gratuita nacional",
+    telefono: "300 912 4560",
+    href: "tel:3009124560",
+  },
+  { entidad: "Profamilia Bogotá", detalle: "(601) 443 4000", href: "tel:6014434000" },
+  { entidad: "Profamilia Medellín", detalle: "(604) 283 6688", href: "tel:6042836688" },
+  { entidad: "Profamilia Cali", detalle: "(602) 386 000", href: "tel:602386000" },
+  { entidad: "Profamilia Barranquilla", detalle: "(605) 319 7928", href: "tel:6053197928" },
+];
 
 export default function AnticoncepcionPage() {
   return (
-    <TopicShell title="Anticoncepción sin mitos" icon={ShieldCheck}>
+    <TopicShell
+      eyebrow="Tema 1 — Anticoncepción sin mitos"
+      title="Métodos anticonceptivos: la info que nadie te da bien"
+      icon={ShieldCheck}
+    >
+      <p>
+        En Colombia, tu EPS está obligada por ley a darte información y
+        métodos anticonceptivos totalmente gratis — sin importar si eres del
+        régimen contributivo o subsidiado. No necesitas la autorización de
+        tus papás si tienes 14 años o más. Solo necesitas tu documento de
+        identidad y pedir la cita.
+      </p>
+
+      <p>
+        Existen varios métodos: condón, pastillas, inyección, implante
+        subdérmico, DIU. Cada uno tiene diferente forma de uso y duración.
+        Un profesional de salud te puede explicar cuál se ajusta mejor a ti
+        — y esa consulta también es gratuita y confidencial.
+      </p>
+
       <div className="flex flex-col gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-5">
         <div className="flex items-center gap-2 font-medium text-amber-900">
           <Lightbulb className="size-5 shrink-0" strokeWidth={1.5} />
-          ¿Sabías esto?
+          Dato real
         </div>
         <p className="text-sm text-amber-900">
-          Más de 66 mil bebés nacieron el año pasado de madres entre 10 y 19
-          años en Colombia — eso es el 15% de todos los partos del país. No
-          es un dato lejano. Es una de cada siete personas que nacen en
-          Colombia hoy.
-        </p>
-        <p className="text-xs text-amber-700">
-          Fuente: DANE, citado por la Pontificia Universidad Javeriana.
+          Según el DANE, más de 66 mil bebés nacieron el año pasado de
+          madres entre 10 y 19 años en Colombia — eso es el 15% de todos los
+          partos del país. La mayoría de las veces no es porque falte
+          información en internet, sino porque nadie te la explica de forma
+          clara y sin pena.
         </p>
       </div>
-
-      <p>
-        Y lo más difícil: no siempre es porque alguien no sabía cómo
-        cuidarse. Muchas veces es porque nadie le explicó cómo hacerlo sin
-        pena ni juicio.
-      </p>
 
       <div className="flex flex-col gap-4">
-        <h2 className="font-semibold text-neutral-900">
-          Aquí va lo que casi nadie te cuenta:
+        <h2 className="flex items-center gap-2 font-semibold text-neutral-900">
+          <MapPin className="size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
+          Dónde pedir tu cita de planificación familiar
         </h2>
 
-        <ul className="flex flex-col gap-3">
-          <li className="flex gap-3">
-            <CircleCheck className="mt-0.5 size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
-            <span>
-              Tu EPS está obligada por ley a darte información y métodos
-              anticonceptivos totalmente gratis — no importa si eres del
-              régimen contributivo o subsidiado.
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <CircleCheck className="mt-0.5 size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
-            <span>
-              Si tienes 14 años o más, no necesitas que tus papás te
-              acompañen ni que firmen nada. Solo tu documento de identidad y
-              pedir la cita.
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <CircleCheck className="mt-0.5 size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
-            <span>
-              Existen varios métodos — condón, pastillas, inyección,
-              implante, DIU — y cada uno funciona distinto. No tienes que
-              adivinar cuál te sirve: un profesional de salud te lo explica,
-              gratis y en confianza.
-            </span>
-          </li>
-        </ul>
-      </div>
+        <p>No importa a qué EPS estés afiliado/a, el proceso es prácticamente el mismo:</p>
 
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
-        <p className="font-medium text-emerald-900">Lo que puedes hacer hoy</p>
-        <p className="mt-1 text-sm text-emerald-800">
-          Pedir una cita de planificación familiar en tu EPS. No necesitas
-          excusa ni compañía.
+        <ol className="flex flex-col gap-2 pl-5 text-sm">
+          <li className="list-decimal">
+            Solicita una <span className="font-medium">cita de planificación familiar</span>{" "}
+            (o de medicina general, mencionando que es para eso) en tu{" "}
+            <span className="font-medium">IPS primaria</span> — es el centro de
+            salud donde te atienden normalmente
+          </li>
+          <li className="list-decimal">
+            La puedes pedir por teléfono, WhatsApp, la app de tu EPS, o
+            presencialmente
+          </li>
+          <li className="list-decimal">
+            Recibirás una consejería sobre los métodos disponibles y podrás
+            elegir el que prefieras
+          </li>
+          <li className="list-decimal">
+            Si eliges un método, te dan la orden médica ahí mismo para
+            reclamarlo
+          </li>
+        </ol>
+
+        <p className="text-sm font-medium text-neutral-900">Contactos según tu caso:</p>
+
+        <ul className="flex flex-col gap-2">
+          {CONTACTOS.map(({ entidad, detalle, telefono, href }) => (
+            <li
+              key={entidad}
+              className="flex flex-col gap-1 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 sm:flex-row sm:items-center sm:justify-between"
+            >
+              <span className="text-sm font-medium text-neutral-900">{entidad}</span>
+              {href ? (
+                <a
+                  href={href}
+                  className="flex shrink-0 items-center gap-2 text-sm font-medium text-emerald-700 hover:text-emerald-900"
+                >
+                  <Phone className="size-4 shrink-0" strokeWidth={1.5} />
+                  {telefono ?? detalle}
+                </a>
+              ) : (
+                <span className="text-sm text-neutral-600">{detalle}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+
+        <p className="text-sm text-neutral-500">
+          Si no sabes cuál es tu EPS o cómo contactarla, Profamilia también
+          orienta sobre eso — no necesitas estar afiliado/a para que te den
+          información inicial.
         </p>
       </div>
     </TopicShell>
