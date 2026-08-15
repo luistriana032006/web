@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ShieldCheck, HeartHandshake, Scale, MapPinned } from "lucide-react";
+import { ArrowLeft, ShieldCheck, HeartHandshake, Scale, MapPinned, Stethoscope } from "lucide-react";
 
 const TOPICS = [
   { name: "Anticoncepción sin mitos", slug: "anticoncepcion", icon: ShieldCheck },
@@ -26,6 +26,18 @@ export default function ColombiaPage() {
         <p className="max-w-sm text-sm text-mountain">
           Elegí un tema para empezar.
         </p>
+      </div>
+
+      <div className="flex w-full max-w-2xl items-start gap-3 rounded-2xl border border-tobacco/30 bg-sand/60 p-5">
+        <Stethoscope className="mt-0.5 size-5 shrink-0 text-terracota" strokeWidth={1.5} />
+        <div>
+          <p className="font-medium text-mahogany">Validado por profesionales</p>
+          <p className="mt-1 text-sm text-mahogany">
+            Este contenido está siendo revisado por psicólogos y
+            profesionales de salud del equipo. Próximamente vas a poder leer
+            sus aportes acá.
+          </p>
+        </div>
       </div>
 
       <div className="grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
