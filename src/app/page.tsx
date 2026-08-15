@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Lock, Sprout, ArrowRight, Smartphone } from "lucide-react";
 import { PhoneFrame } from "@/components/phone-frame";
+import { InstallButton } from "@/components/install-button";
 
 const COUNTRIES = [
   { name: "Bolivia", slug: "bolivia", active: false },
@@ -41,6 +42,7 @@ export default function Home() {
           Información sobre salud sexual y reproductiva, con marco legal y
           rutas de atención propias de cada país.
         </p>
+        <InstallButton />
       </div>
 
       <div className="grid w-full max-w-2xl grid-cols-2 gap-3 sm:grid-cols-3">
