@@ -20,6 +20,9 @@ const STATIC_ASSETS = [
   "/apple-touch-icon.png",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
+  "/tutorial/paso-1-abrir-menu.jpeg",
+  "/tutorial/paso-2-confirmar-instalacion.jpeg",
+  "/tutorial/paso-3-app-instalada.jpeg",
 ];
 
 // Descubre y cachea los JS/CSS/fuentes hasheados que Next.js linkea en cada
@@ -73,7 +76,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-const IMMUTABLE_ASSET_RE = /\/(_next\/static|icons)\//;
+const IMMUTABLE_ASSET_RE = /\/(_next\/static|icons|tutorial)\//;
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
