@@ -31,7 +31,7 @@ export default function ConsentimientoPage() {
         presión. Si alguien te obliga, te manipula, te chantajea o
         aprovecha una diferencia de poder (edad, autoridad, dinero) para que
         digas que sí,{" "}
-        <span className="font-medium text-neutral-900">
+        <span className="font-medium text-mahogany">
           eso no es consentimiento, es abuso
         </span>
         .
@@ -50,8 +50,8 @@ export default function ConsentimientoPage() {
       </p>
 
       <div className="flex flex-col gap-4">
-        <h2 className="flex items-center gap-2 font-semibold text-neutral-900">
-          <MapPin className="size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
+        <h2 className="flex items-center gap-2 font-semibold text-mahogany">
+          <MapPin className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
           Dónde denunciar o pedir ayuda
         </h2>
 
@@ -59,27 +59,27 @@ export default function ConsentimientoPage() {
           {AYUDA.map(({ nombre, detalle, href }) => (
             <li
               key={nombre}
-              className="flex flex-col gap-1 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 sm:flex-row sm:items-center sm:justify-between"
+              className="flex flex-col gap-1 rounded-2xl border border-coral/40 bg-coral/10 p-4 sm:flex-row sm:items-center sm:justify-between"
             >
-              <span className="text-sm text-neutral-600">{detalle}</span>
+              <span className="text-sm text-mahogany">{detalle}</span>
               <a
                 href={href}
-                className="flex shrink-0 items-center gap-2 text-sm font-medium text-emerald-700 hover:text-emerald-900"
+                className="flex shrink-0 items-center gap-2 text-sm font-medium text-coral hover:text-coral/80"
               >
                 <Phone className="size-4 shrink-0" strokeWidth={1.5} />
                 {nombre}
               </a>
             </li>
           ))}
-          <li className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600">
+          <li className="rounded-2xl border border-tobacco/30 bg-sand/50 p-4 text-sm text-mahogany">
             También puedes acudir directamente a una{" "}
-            <span className="font-medium text-neutral-900">Comisaría de Familia</span>{" "}
-            o a la <span className="font-medium text-neutral-900">Fiscalía</span> más
-            cercana a poner la denuncia
+            <span className="font-medium">Comisaría de Familia</span> o a la{" "}
+            <span className="font-medium">Fiscalía</span> más cercana a poner
+            la denuncia
           </li>
         </ul>
 
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-mountain">
           No necesitas saber &ldquo;cómo se dice legalmente&rdquo; lo que te
           pasó. Solo cuéntalo con tus palabras, ellos te guían desde ahí.
         </p>

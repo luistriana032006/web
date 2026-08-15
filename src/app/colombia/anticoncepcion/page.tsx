@@ -48,12 +48,12 @@ export default function AnticoncepcionPage() {
         y esa consulta también es gratuita y confidencial.
       </p>
 
-      <div className="flex flex-col gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-5">
-        <div className="flex items-center gap-2 font-medium text-amber-900">
-          <Lightbulb className="size-5 shrink-0" strokeWidth={1.5} />
+      <div className="flex flex-col gap-3 rounded-2xl border border-tobacco/30 bg-sand/60 p-5">
+        <div className="flex items-center gap-2 font-medium text-mahogany">
+          <Lightbulb className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
           Dato real
         </div>
-        <p className="text-sm text-amber-900">
+        <p className="text-sm text-mahogany">
           Según el DANE, más de 66 mil bebés nacieron el año pasado de
           madres entre 10 y 19 años en Colombia: eso es el 15% de todos los
           partos del país. La mayoría de las veces no es porque falte
@@ -63,8 +63,8 @@ export default function AnticoncepcionPage() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="flex items-center gap-2 font-semibold text-neutral-900">
-          <MapPin className="size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
+        <h2 className="flex items-center gap-2 font-semibold text-mahogany">
+          <MapPin className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
           Dónde pedir tu cita de planificación familiar
         </h2>
 
@@ -91,31 +91,31 @@ export default function AnticoncepcionPage() {
           </li>
         </ol>
 
-        <p className="text-sm font-medium text-neutral-900">Contactos según tu caso:</p>
+        <p className="text-sm font-medium text-mahogany">Contactos según tu caso:</p>
 
         <ul className="flex flex-col gap-2">
           {CONTACTOS.map(({ entidad, detalle, telefono, href }) => (
             <li
               key={entidad}
-              className="flex flex-col gap-1 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 sm:flex-row sm:items-center sm:justify-between"
+              className="flex flex-col gap-1 rounded-2xl border border-tobacco/30 bg-sand/50 p-4 sm:flex-row sm:items-center sm:justify-between"
             >
-              <span className="text-sm font-medium text-neutral-900">{entidad}</span>
+              <span className="text-sm font-medium text-mahogany">{entidad}</span>
               {href ? (
                 <a
                   href={href}
-                  className="flex shrink-0 items-center gap-2 text-sm font-medium text-emerald-700 hover:text-emerald-900"
+                  className="flex shrink-0 items-center gap-2 text-sm font-medium text-terracota hover:text-terracota/80"
                 >
                   <Phone className="size-4 shrink-0" strokeWidth={1.5} />
                   {telefono ?? detalle}
                 </a>
               ) : (
-                <span className="text-sm text-neutral-600">{detalle}</span>
+                <span className="text-sm text-mountain">{detalle}</span>
               )}
             </li>
           ))}
         </ul>
 
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-mountain">
           Si no sabes cuál es tu EPS o cómo contactarla, Profamilia también
           orienta sobre eso. No necesitas estar afiliado/a para que te den
           información inicial.

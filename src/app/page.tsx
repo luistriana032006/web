@@ -12,13 +12,13 @@ const COUNTRIES = [
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center gap-10 bg-white px-6 py-16">
+    <div className="flex flex-1 flex-col items-center justify-center gap-10 bg-vanilla px-6 py-16">
       <div className="flex flex-col items-center gap-3 text-center">
-        <Sprout className="size-10 text-emerald-600" strokeWidth={1.5} />
-        <h1 className="text-2xl font-semibold tracking-tight text-neutral-900">
+        <Sprout className="size-10 text-sage" strokeWidth={1.5} />
+        <h1 className="text-2xl font-semibold tracking-tight text-mahogany">
           Elegí tu país
         </h1>
-        <p className="max-w-sm text-sm text-neutral-500">
+        <p className="max-w-sm text-sm text-mountain">
           Información sobre salud sexual y reproductiva, con marco legal y
           rutas de atención propias de cada país.
         </p>
@@ -30,18 +30,18 @@ export default function Home() {
             <Link
               key={country.slug}
               href={`/${country.slug}`}
-              className="group flex flex-col items-center justify-center gap-2 rounded-2xl border border-emerald-600 bg-emerald-50 px-4 py-6 text-center transition-colors hover:bg-emerald-100"
+              className="group flex flex-col items-center justify-center gap-2 rounded-2xl bg-terracota px-4 py-6 text-center transition-colors hover:bg-terracota/90"
             >
-              <span className="font-medium text-emerald-900">
+              <span className="font-medium text-vanilla">
                 {country.name}
               </span>
-              <ArrowRight className="size-4 text-emerald-700 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="size-4 text-vanilla transition-transform group-hover:translate-x-1" />
             </Link>
           ) : (
             <div
               key={country.slug}
               aria-disabled="true"
-              className="flex flex-col items-center justify-center gap-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-6 text-center text-neutral-400"
+              className="flex flex-col items-center justify-center gap-2 rounded-2xl border border-tobacco/40 bg-sand px-4 py-6 text-center text-mountain"
             >
               <span className="font-medium">{country.name}</span>
               <span className="flex items-center gap-1 text-xs">

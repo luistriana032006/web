@@ -1,22 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f1eada;
+  --foreground: #584738;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* Paleta de marca — Hackathon Andino */
+  --color-vanilla: #f1eada; /* fondo principal */
+  --color-sand: #cec1a8; /* fondos secundarios: tarjetas, secciones alternas */
+  --color-tobacco: #b59e7d; /* bordes, íconos secundarios, texto de apoyo */
+  --color-mountain: #aaa396; /* texto secundario, subtítulos, deshabilitado */
+  --color-mahogany: #584738; /* texto principal, títulos */
+  --color-terracota: #d9713c; /* CTA principal: "Ver mi país", "Elegir tema" */
+  --color-coral: #e85d4e; /* ayuda urgente: líneas 155/141/123 */
+  --color-sage: #7c9473; /* progreso y logro: avance, constancia, confirmaciones */
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

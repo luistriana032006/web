@@ -44,13 +44,13 @@ export default function DerechosPage() {
       icon={Scale}
     >
       <div className="flex flex-col gap-4">
-        <h2 className="font-semibold text-neutral-900">
+        <h2 className="font-semibold text-mahogany">
           Desde los 14 años, en Colombia puedes:
         </h2>
         <ul className="flex flex-col gap-3">
           {DERECHOS.map((derecho) => (
             <li key={derecho} className="flex gap-3">
-              <CircleCheck className="mt-0.5 size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
+              <CircleCheck className="mt-0.5 size-5 shrink-0 text-sage" strokeWidth={1.5} />
               <span>{derecho}</span>
             </li>
           ))}
@@ -71,12 +71,12 @@ export default function DerechosPage() {
         confidencial en Profamilia o en tu centro de salud más cercano.
       </p>
 
-      <div className="flex flex-col gap-2 rounded-2xl border border-orange-200 bg-orange-50 p-5">
-        <div className="flex items-center gap-2 font-medium text-orange-900">
-          <TriangleAlert className="size-5 shrink-0" strokeWidth={1.5} />
+      <div className="flex flex-col gap-2 rounded-2xl border border-tobacco/30 bg-sand/60 p-5">
+        <div className="flex items-center gap-2 font-medium text-mahogany">
+          <TriangleAlert className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
           Importante
         </div>
-        <p className="text-sm text-orange-900">
+        <p className="text-sm text-mahogany">
           Si tienes entre 12 y 14 años y ya iniciaste relaciones sexuales,
           la ley activa rutas de protección con el ICBF, no como castigo,
           sino porque a esa edad la ley busca protegerte de situaciones de
@@ -86,8 +86,8 @@ export default function DerechosPage() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="flex items-center gap-2 font-semibold text-neutral-900">
-          <MapPin className="size-5 shrink-0 text-emerald-600" strokeWidth={1.5} />
+        <h2 className="flex items-center gap-2 font-semibold text-mahogany">
+          <MapPin className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
           Dónde hacer valer estos derechos
         </h2>
 
@@ -95,14 +95,14 @@ export default function DerechosPage() {
           {RUTAS_DERECHOS.map(({ situacion, detalle, telefono, href }) => (
             <li
               key={situacion}
-              className="flex flex-col gap-1 rounded-2xl border border-neutral-200 bg-neutral-50 p-4"
+              className="flex flex-col gap-1 rounded-2xl border border-tobacco/30 bg-sand/50 p-4"
             >
-              <span className="text-sm font-medium text-neutral-900">{situacion}</span>
-              <span className="text-sm text-neutral-600">{detalle}</span>
+              <span className="text-sm font-medium text-mahogany">{situacion}</span>
+              <span className="text-sm text-mountain">{detalle}</span>
               {href && (
                 <a
                   href={href}
-                  className="mt-1 flex items-center gap-2 text-sm font-medium text-emerald-700 hover:text-emerald-900"
+                  className="mt-1 flex items-center gap-2 text-sm font-medium text-terracota hover:text-terracota/80"
                 >
                   <Phone className="size-4 shrink-0" strokeWidth={1.5} />
                   {telefono}

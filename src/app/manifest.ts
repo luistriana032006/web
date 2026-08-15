@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Hackaton Andino PWA",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#ffffff",
+    background_color: "#F1EADA",
+    theme_color: "#F1EADA",
     icons: [
       {
         src: "/icons/icon-192.png",
