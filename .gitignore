@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# apuntes internos (no van a GitHub)
+/apuntes/
+
+# documentos personales sueltos (no son parte del proyecto)
+/belen_auditoria_v2.pdf
+/belen_investigacion (1).pdf
+
+# editores
+.vscode/
+.idea/
