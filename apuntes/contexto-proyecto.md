@@ -1,6 +1,6 @@
 # Contexto del proyecto — web
 
-> Documento vivo. Actualizar en el mismo turno en que un cambio lo invalide (ver `reglas-para-el-agent.md`).
+> Documento vivo. Actualizar en el mismo turno en que un cambio lo invalide (ver `apuntes/reglas-para-el-agent.md`).
 
 ## Qué es
 
@@ -34,7 +34,9 @@ web/
 │  ├─ apple-touch-icon.png
 │  └─ favicon.png
 ├─ AGENTS.md / CLAUDE.md      # ver sección "Qué NO tocar"
-└─ reglas-para-el-agent.md    # Método AR — reglas de proceso para el agente
+└─ apuntes/
+   ├─ reglas-para-el-agent.md # Método AR — reglas de proceso para el agente
+   └─ contexto-proyecto.md    # este documento
 ```
 
 ## PWA — estado actual
@@ -46,8 +48,9 @@ web/
 
 ## Convenciones
 
-- Nombres de archivo: kebab-case, según `reglas-para-el-agent.md` (excepto nombres de convención fija: `README.md`, `CLAUDE.md`, `AGENTS.md`).
-- Se sigue el "Método AR" (`reglas-para-el-agent.md`, importado desde `CLAUDE.md`) para cómo reportar avances, clasificar decisiones propias y versionar documentación.
+- Nombres de archivo: kebab-case, según `apuntes/reglas-para-el-agent.md` (excepto nombres de convención fija: `README.md`, `CLAUDE.md`, `AGENTS.md`).
+- Se sigue el "Método AR" (`apuntes/reglas-para-el-agent.md`, importado desde `CLAUDE.md`) para cómo reportar avances, clasificar decisiones propias y versionar documentación.
+- Toda la documentación del proyecto (reglas, contexto, y lo que se sume a futuro — bitácoras, resúmenes de sesión) vive en `apuntes/`. `README.md`, `CLAUDE.md` y `AGENTS.md` quedan en la raíz porque el tooling (Claude Code, Next.js) los busca ahí por convención fija — no se mueven.
 
 ## Qué NO tocar
 

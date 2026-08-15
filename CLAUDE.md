@@ -1,3 +1,3 @@
 @AGENTS.md
-@reglas-para-el-agent.md
-@contexto-proyecto.md
+@apuntes/reglas-para-el-agent.md
+@apuntes/contexto-proyecto.md
