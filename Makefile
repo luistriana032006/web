@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help install dev build start lint clean
+.PHONY: help install start build serve lint clean
 
 help: ## Muestra esta ayuda
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -9,13 +9,13 @@ help: ## Muestra esta ayuda
 install: ## Instala dependencias
 	npm install
 
-dev: ## Levanta el servidor de desarrollo
+start: ## Levanta el servidor de desarrollo
 	npm run dev
 
 build: ## Compila la app para producción
 	npm run build
 
-start: ## Sirve el build de producción (requiere `make build` antes)
+serve: ## Sirve el build de producción (requiere `make build` antes)
 	npm run start
 
 lint: ## Corre el linter
