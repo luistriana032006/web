@@ -2,10 +2,10 @@ import { Scale, MapPin, CircleCheck, TriangleAlert, Phone } from "lucide-react";
 import { TopicShell } from "@/components/topic-shell";
 
 const DERECHOS = [
-  "Pedir información y atención en salud sexual sin que tus papás tengan que saberlo, si tú no quieres — así lo establece la Resolución 309 de 2025 del Ministerio de Salud",
+  "Pedir información y atención en salud sexual sin que tus papás tengan que saberlo, si tú no quieres. Así lo establece la Resolución 309 de 2025 del Ministerio de Salud",
   "Pedir una cita médica tú mismo/a, sin necesitar que un adulto te acompañe o autorice",
   "Recibir la vacuna del VPH dando tu propio consentimiento",
-  "Pedir asesoría y una prueba de VIH u otras infecciones de transmisión sexual de forma gratuita y confidencial — sin que nadie más se entere, ni siquiera tu familia, si tú no quieres. Esto aplica sin importar tu edad, no solo desde los 14",
+  "Pedir asesoría y una prueba de VIH u otras infecciones de transmisión sexual de forma gratuita y confidencial, sin que nadie más se entere, ni siquiera tu familia, si tú no quieres. Esto aplica sin importar tu edad, no solo desde los 14",
   "Que el resultado de esa prueba sea confidencial, incluso frente a tu familia, si tú decides que así sea",
 ];
 
@@ -20,7 +20,7 @@ const RUTAS_DERECHOS: RutaDerecho[] = [
   {
     situacion: "Para pedir atención en salud sexual sin que tu familia se entere",
     detalle:
-      "Ve directamente a tu IPS primaria y pide cita de medicina general o consulta de salud sexual — no tienen por qué decirle nada a tus representantes legales",
+      "Ve directamente a tu IPS primaria y pide cita de medicina general o consulta de salud sexual: no tienen por qué decirle nada a tus representantes legales",
   },
   {
     situacion: "Si te niegan la atención o te juzgan",
@@ -39,7 +39,7 @@ const RUTAS_DERECHOS: RutaDerecho[] = [
 export default function DerechosPage() {
   return (
     <TopicShell
-      eyebrow="Tema 3 — Mis derechos"
+      eyebrow="Tema 3: Mis derechos"
       title="Lo que la ley dice que SÍ puedes hacer"
       icon={Scale}
     >
@@ -78,7 +78,7 @@ export default function DerechosPage() {
         </div>
         <p className="text-sm text-orange-900">
           Si tienes entre 12 y 14 años y ya iniciaste relaciones sexuales,
-          la ley activa rutas de protección con el ICBF — no como castigo,
+          la ley activa rutas de protección con el ICBF, no como castigo,
           sino porque a esa edad la ley busca protegerte de situaciones de
           riesgo. Esto no es una amenaza, es un recurso que existe para
           cuidarte.

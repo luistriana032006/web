@@ -49,7 +49,7 @@ const RUTAS = [
 export default function RutasDeAtencionPage() {
   return (
     <TopicShell
-      eyebrow="Tema 4 — Rutas de atención"
+      eyebrow="Tema 4: Rutas de atención"
       title="A dónde ir si necesitas ayuda"
       icon={MapPinned}
     >

@@ -13,7 +13,7 @@ const AYUDA = [
     href: "tel:123",
   },
   {
-    nombre: "ICBF — Línea 141",
+    nombre: "ICBF (Línea 141)",
     detalle: "si eres menor de edad y necesitas protección (gratis, 24 h)",
     href: "tel:141",
   },
@@ -22,7 +22,7 @@ const AYUDA = [
 export default function ConsentimientoPage() {
   return (
     <TopicShell
-      eyebrow="Tema 2 — Consentimiento y violencia sexual"
+      eyebrow="Tema 2: Consentimiento y violencia sexual"
       title="Consentimiento: tu cuerpo, tu decisión"
       icon={HeartHandshake}
     >
@@ -32,15 +32,15 @@ export default function ConsentimientoPage() {
         aprovecha una diferencia de poder (edad, autoridad, dinero) para que
         digas que sí,{" "}
         <span className="font-medium text-neutral-900">
-          eso no es consentimiento — es abuso
+          eso no es consentimiento, es abuso
         </span>
         .
       </p>
 
       <p>
         En Colombia, la ley reconoce que los adolescentes tienen derecho a
-        decidir sobre su cuerpo según su edad y madurez. Nadie —ni un
-        familiar, ni una pareja, ni un profesor— tiene derecho a forzarte a
+        decidir sobre su cuerpo según su edad y madurez. Nadie, ni un
+        familiar, ni una pareja, ni un profesor, tiene derecho a forzarte a
         nada.
       </p>
 
@@ -81,7 +81,7 @@ export default function ConsentimientoPage() {
 
         <p className="text-sm text-neutral-500">
           No necesitas saber &ldquo;cómo se dice legalmente&rdquo; lo que te
-          pasó — solo cuéntalo con tus palabras, ellos te guían desde ahí.
+          pasó. Solo cuéntalo con tus palabras, ellos te guían desde ahí.
         </p>
       </div>
     </TopicShell>

@@ -29,13 +29,13 @@ const CONTACTOS: Contacto[] = [
 export default function AnticoncepcionPage() {
   return (
     <TopicShell
-      eyebrow="Tema 1 — Anticoncepción sin mitos"
+      eyebrow="Tema 1: Anticoncepción sin mitos"
       title="Métodos anticonceptivos: la info que nadie te da bien"
       icon={ShieldCheck}
     >
       <p>
         En Colombia, tu EPS está obligada por ley a darte información y
-        métodos anticonceptivos totalmente gratis — sin importar si eres del
+        métodos anticonceptivos totalmente gratis, sin importar si eres del
         régimen contributivo o subsidiado. No necesitas la autorización de
         tus papás si tienes 14 años o más. Solo necesitas tu documento de
         identidad y pedir la cita.
@@ -44,8 +44,8 @@ export default function AnticoncepcionPage() {
       <p>
         Existen varios métodos: condón, pastillas, inyección, implante
         subdérmico, DIU. Cada uno tiene diferente forma de uso y duración.
-        Un profesional de salud te puede explicar cuál se ajusta mejor a ti
-        — y esa consulta también es gratuita y confidencial.
+        Un profesional de salud te puede explicar cuál se ajusta mejor a ti,
+        y esa consulta también es gratuita y confidencial.
       </p>
 
       <div className="flex flex-col gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-5">
@@ -55,7 +55,7 @@ export default function AnticoncepcionPage() {
         </div>
         <p className="text-sm text-amber-900">
           Según el DANE, más de 66 mil bebés nacieron el año pasado de
-          madres entre 10 y 19 años en Colombia — eso es el 15% de todos los
+          madres entre 10 y 19 años en Colombia: eso es el 15% de todos los
           partos del país. La mayoría de las veces no es porque falte
           información en internet, sino porque nadie te la explica de forma
           clara y sin pena.
@@ -74,7 +74,7 @@ export default function AnticoncepcionPage() {
           <li className="list-decimal">
             Solicita una <span className="font-medium">cita de planificación familiar</span>{" "}
             (o de medicina general, mencionando que es para eso) en tu{" "}
-            <span className="font-medium">IPS primaria</span> — es el centro de
+            <span className="font-medium">IPS primaria</span>, es el centro de
             salud donde te atienden normalmente
           </li>
           <li className="list-decimal">
@@ -117,7 +117,7 @@ export default function AnticoncepcionPage() {
 
         <p className="text-sm text-neutral-500">
           Si no sabes cuál es tu EPS o cómo contactarla, Profamilia también
-          orienta sobre eso — no necesitas estar afiliado/a para que te den
+          orienta sobre eso. No necesitas estar afiliado/a para que te den
           información inicial.
         </p>
       </div>
