@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Lock, Sprout, ArrowRight, Smartphone } from "lucide-react";
-import { PhoneFrame } from "@/components/phone-frame";
+import { Lock, Sprout, ArrowRight } from "lucide-react";
 import { InstallButton } from "@/components/install-button";
 
 const COUNTRIES = [
@@ -10,24 +9,6 @@ const COUNTRIES = [
   { name: "Ecuador", slug: "ecuador", active: false },
   { name: "Perú", slug: "peru", active: false },
   { name: "Venezuela", slug: "venezuela", active: false },
-] as const;
-
-const INSTALL_STEPS = [
-  {
-    src: "/tutorial/paso-1-abrir-menu.jpeg",
-    alt: "Menú de Chrome con la opción 'Instalar y crear acceso directo'",
-    caption: "Abrí el menú (⋮) de Chrome y tocá \"Instalar\".",
-  },
-  {
-    src: "/tutorial/paso-2-confirmar-instalacion.jpeg",
-    alt: "Cuadro de diálogo de Chrome confirmando instalar Hackaton Andino",
-    caption: "Confirmá tocando \"Instalar\".",
-  },
-  {
-    src: "/tutorial/paso-3-app-instalada.jpeg",
-    alt: "Ícono de Hackaton Andino ya instalado en la pantalla de inicio",
-    caption: "Listo: queda como app en tu pantalla de inicio.",
-  },
 ] as const;
 
 export default function Home() {
@@ -72,25 +53,6 @@ export default function Home() {
             </div>
           )
         )}
-      </div>
-
-      <div className="flex w-full max-w-2xl flex-col items-center gap-4">
-        <h2 className="flex items-center gap-2 text-lg font-semibold text-mahogany">
-          <Smartphone className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
-          Tutorial de instalación
-        </h2>
-
-        <div className="flex w-full snap-x snap-mandatory gap-4 overflow-x-auto px-2 py-2 sm:justify-center">
-          {INSTALL_STEPS.map((step, index) => (
-            <PhoneFrame
-              key={step.src}
-              src={step.src}
-              alt={step.alt}
-              step={index + 1}
-              caption={step.caption}
-            />
-          ))}
-        </div>
       </div>
     </div>
   );
