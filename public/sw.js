@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v3";
 const CACHE_NAME = `hackaton-andino-${CACHE_VERSION}`;
 
 // Todas las rutas reales de la app: se precargan enteras al instalar,
@@ -10,6 +10,11 @@ const ROUTES_TO_PRECACHE = [
   "/colombia/consentimiento",
   "/colombia/derechos",
   "/colombia/rutas-de-atencion",
+  "/bolivia",
+  "/bolivia/anticoncepcion",
+  "/bolivia/consentimiento",
+  "/bolivia/derechos",
+  "/bolivia/rutas-de-atencion",
 ];
 
 // Assets de rutas fijas (no hasheadas) que no aparecen linkeadas dentro del HTML.

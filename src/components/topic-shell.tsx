@@ -6,17 +6,23 @@ export function TopicShell({
   title,
   icon: Icon,
   children,
+  backHref = "/colombia",
+  sourceNote = "Basado en la Resolución 00000309 de 2025 del Ministerio de Salud y Protección Social de Colombia.",
 }: {
   eyebrow: string;
   title: string;
   icon: LucideIcon;
   children: React.ReactNode;
+  /** Ruta del país al que vuelve "Volver a los temas". Default: Colombia (primer país cargado). */
+  backHref?: string;
+  /** Nota de fuente al pie de cada tema. Default: Colombia (primer país cargado). */
+  sourceNote?: string;
 }) {
   return (
     <div className="flex flex-1 flex-col items-center bg-vanilla px-6 py-16">
       <div className="flex w-full max-w-2xl flex-col gap-8">
         <Link
-          href="/colombia"
+          href={backHref}
           className="flex items-center gap-1 self-start text-sm text-mountain hover:text-mahogany"
         >
           <ArrowLeft className="size-4" />
@@ -36,8 +42,7 @@ export function TopicShell({
         <div className="flex flex-col gap-6 text-mahogany">{children}</div>
 
         <p className="border-t border-tobacco/20 pt-6 text-xs text-mountain">
-          Basado en la Resolución 00000309 de 2025 del Ministerio de Salud y
-          Protección Social de Colombia.
+          {sourceNote}
         </p>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Lock, Sprout, ArrowRight } from "lucide-react";
 import { InstallButton } from "@/components/install-button";
 
 const COUNTRIES = [
-  { name: "Bolivia", slug: "bolivia", active: false },
+  { name: "Bolivia", slug: "bolivia", active: true },
   { name: "Chile", slug: "chile", active: false },
   { name: "Colombia", slug: "colombia", active: true },
   { name: "Ecuador", slug: "ecuador", active: false },
