@@ -7,7 +7,7 @@ const COUNTRIES = [
   { name: "Chile", slug: "chile", active: true },
   { name: "Colombia", slug: "colombia", active: true },
   { name: "Ecuador", slug: "ecuador", active: true },
-  { name: "Perú", slug: "peru", active: false },
+  { name: "Perú", slug: "peru", active: true },
   { name: "Venezuela", slug: "venezuela", active: false },
 ] as const;
 
