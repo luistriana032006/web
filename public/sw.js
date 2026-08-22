@@ -1,10 +1,11 @@
-const CACHE_VERSION = "v7";
+const CACHE_VERSION = "v9";
 const CACHE_NAME = `hackaton-andino-${CACHE_VERSION}`;
 
 // Todas las rutas reales de la app: se precargan enteras al instalar,
 // para que funcionen offline aunque el usuario nunca las haya visitado.
 const ROUTES_TO_PRECACHE = [
   "/",
+  "/mitos",
   "/colombia",
   "/colombia/anticoncepcion",
   "/colombia/consentimiento",
@@ -48,6 +49,20 @@ const STATIC_ASSETS = [
   "/tutorial/paso-1-abrir-menu.jpeg",
   "/tutorial/paso-2-confirmar-instalacion.jpeg",
   "/tutorial/paso-3-app-instalada.jpeg",
+  "/mitos/mito1_portada.jpeg",
+  "/mitos/mito2_portada.jpeg",
+  "/mitos/mito3_portada.jpeg",
+  "/mitos/mito4_portada.jpeg",
+  "/mitos/mito5_portada.jpeg",
+  "/mitos/mito6_portada.jpeg",
+  "/mitos/mito7_portada.jpeg",
+  "/mitos/mito8_portada.jpeg",
+  "/mitos/mito9_portada.jpeg",
+  "/mitos/mito10_portada.jpeg",
+  "/mitos/mito11_portada.jpeg",
+  "/mitos/mito12_portada.jpeg",
+  "/mitos/mito13_portada.jpeg",
+  "/mitos/mito14_portada.jpeg",
 ];
 
 // Descubre y cachea los JS/CSS/fuentes hasheados que Next.js linkea en cada
@@ -101,7 +116,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-const IMMUTABLE_ASSET_RE = /\/(_next\/static|icons|tutorial)\//;
+const IMMUTABLE_ASSET_RE = /\/(_next\/static|icons|tutorial|mitos)\//;
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Lock, Sprout, ArrowRight } from "lucide-react";
+import { Lock, Sprout, ArrowRight, Images } from "lucide-react";
 import { InstallButton } from "@/components/install-button";
 
 const COUNTRIES = [
@@ -16,6 +16,9 @@ export default function Home() {
     <div className="flex flex-1 flex-col items-center justify-center gap-10 bg-vanilla px-6 py-16">
       <div className="flex flex-col items-center gap-3 text-center">
         <Sprout className="size-10 text-sage" strokeWidth={1.5} />
+        <span className="text-sm font-semibold tracking-wide text-sage">
+          Germina
+        </span>
         <h1 className="text-2xl font-semibold tracking-tight text-mahogany">
           Elegí tu país
         </h1>
@@ -54,6 +57,20 @@ export default function Home() {
           )
         )}
       </div>
+
+      <Link
+        href="/mitos"
+        className="group flex w-full max-w-2xl items-center gap-3 rounded-2xl border border-tobacco/30 bg-sand/60 px-5 py-4 transition-colors hover:bg-sand"
+      >
+        <Images className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
+        <div className="flex flex-1 flex-col">
+          <span className="font-medium text-mahogany">Mitos, desmentidos</span>
+          <span className="text-sm text-mountain">
+            Galería con los mitos más comunes sobre anticoncepción en la región, para todos los países
+          </span>
+        </div>
+        <ArrowRight className="size-4 shrink-0 text-mountain transition-transform group-hover:translate-x-1" />
+      </Link>
     </div>
   );
 }
