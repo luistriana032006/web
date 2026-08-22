@@ -45,10 +45,11 @@ export default async function MitoDetailPage({
           )}
         </div>
 
-        {/* Mismo texto que la infografía, en HTML real: accesible para lectores
-            de pantalla (el texto quemado en la imagen no lo es) y visible aunque
-            la imagen no cargue. */}
-        <div className="flex flex-col gap-3 text-mahogany">
+        {/* Mismo texto que la infografía, en HTML real, pero oculto visualmente
+            (sr-only): la persona vidente ya lo lee en la imagen, no hace falta
+            repetirlo en pantalla. Sigue en el DOM para que un lector de pantalla
+            pueda leerlo, porque el texto quemado en la imagen no es accesible. */}
+        <div className="sr-only flex flex-col gap-3 text-mahogany">
           <p className="text-lg font-medium">&ldquo;{myth.mito}&rdquo;</p>
           <p className="text-mountain">
             <span className="font-medium text-terracota">Falso.</span>{" "}
