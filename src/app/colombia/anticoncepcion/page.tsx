@@ -63,6 +63,72 @@ export default function AnticoncepcionPage() {
       </div>
 
       <div className="flex flex-col gap-4">
+        <h2 className="font-semibold text-mahogany">Mitos desmentidos</h2>
+        <ul className="flex flex-col gap-2 pl-5 text-sm">
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;El coito interrumpido (terminar afuera) es
+              seguro&rdquo;:
+            </span>{" "}
+            falso, el líquido preseminal ya contiene espermatozoides y
+            puede provocar un embarazo
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;El lavado o ducha vaginal después de tener relaciones
+              previene el embarazo&rdquo;:
+            </span>{" "}
+            falso, los espermatozoides ingresan muy rápido, no da tiempo a
+            eliminarlos
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;La pastilla del día después (PAE) es abortiva&rdquo;:
+            </span>{" "}
+            falso, retrasa o evita la ovulación; si el embarazo ya se
+            implantó, no lo interrumpe
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;Los anticonceptivos causan infertilidad a largo
+              plazo&rdquo;:
+            </span>{" "}
+            falso, la fertilidad se recupera rápido al suspenderlos
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;La anticoncepción es responsabilidad exclusiva de la
+              mujer&rdquo;:
+            </span>{" "}
+            falso, hoy se incentiva la corresponsabilidad masculina
+            (condón, vasectomía)
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;El DIU se puede mover al estómago, perforar el útero,
+              o el hombre lo siente durante el sexo&rdquo;:
+            </span>{" "}
+            falso, se coloca en el útero por un profesional y no interfiere
+            en la relación
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;Usar doble condón es más seguro&rdquo;:
+            </span>{" "}
+            falso, el roce entre ambos puede hacer que se rompan
+          </li>
+          <li className="list-disc">
+            <span className="font-medium">
+              &ldquo;Hay que descansar de las pastillas para que el cuerpo
+              se desintoxique&rdquo;:
+            </span>{" "}
+            falso, suspenderlas sin indicación médica solo aumenta el
+            riesgo de embarazo
+          </li>
+        </ul>
+      </div>
+
+      <div className="flex flex-col gap-4">
         <h2 className="flex items-center gap-2 font-semibold text-mahogany">
           <MapPin className="size-5 shrink-0 text-terracota" strokeWidth={1.5} />
           Dónde pedir tu cita de planificación familiar
