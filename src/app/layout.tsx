@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hackaton Andino",
-  description: "Hackaton Andino PWA",
+  title: "Germina",
+  description:
+    "Información sobre salud sexual y reproductiva para adolescentes de la región andina.",
   manifest: "/manifest.webmanifest",
   icons: {
     icon: "/favicon.png",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Hackaton Andino",
+    title: "Germina",
   },
 };
 

@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Hackaton Andino",
-    short_name: "Hackaton Andino",
-    description: "Hackaton Andino PWA",
+    name: "Germina",
+    short_name: "Germina",
+    description:
+      "Información sobre salud sexual y reproductiva para adolescentes de la región andina.",
     start_url: "/",
     display: "standalone",
     background_color: "#F1EADA",
