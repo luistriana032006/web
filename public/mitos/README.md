@@ -1,23 +1,15 @@
 # Imágenes de /mitos
 
-Esta carpeta tiene las dos imágenes por mito de la galería `/mitos`: la portada (ilustración simbólica, sin texto, ya cargadas las 14) y la infografía para compartir (con texto, todavía pendiente).
+Esta carpeta tiene las dos imágenes por mito de la galería `/mitos`: la portada (ilustración simbólica, sin texto) y la infografía para compartir (con texto). **Las 28 (14 + 14) ya están completas y conectadas** en `src/lib/mitos.ts`.
 
 ## Convención de nombres
 
-`mito<N>_portada.jpeg` y `mito<N>_infografia.jpeg`, donde `N` es el número del mito según el orden en `hackaton_andino/mitos.md` (fuera de este repo) — no el orden alfabético del slug. Ver la tabla `mito → slug` en `hackaton_andino/prompts-lote-1-imagenes.md` para el mapeo completo.
+`mito<N>_portada.jpeg` y `infografia_mito<N>.jpeg`, donde `N` es el número del mito según el orden en `hackaton_andino/mitos.md` (fuera de este repo) — no el orden alfabético del slug. Ver la tabla `mito → slug → archivos` en `hackaton_andino/plantilla-imagen-mitos.md` para el mapeo completo.
 
-## Portadas (14/14 — completas)
+## Cómo agregar o reemplazar una imagen
 
-`mito1_portada.jpeg` a `mito14_portada.jpeg`, conectadas en `src/app/mitos/page.tsx` (campo `imageCoverSrc` de cada mito).
-
-## Infografías (0/14 — pendientes)
-
-Van a ir generándose con la Plantilla B de `hackaton_andino/plantilla-imagen-mitos.md` (con texto y el pie `germina.health`). Se conectan en la página de detalle de cada mito (`/mitos/[slug]`, todavía sin construir — ver `apuntes/2026-08-21-plan-mitos-individuales-y-cms.md`), no en la tarjeta de la galería.
-
-## Cómo agregar una imagen nueva
-
-1. Generala con la plantilla correspondiente (A para portada, B para infografía).
-2. Guardala acá con el nombre `mito<N>_portada.jpeg` o `mito<N>_infografia.jpeg`.
-3. Avisale al agente — conecta el campo correspondiente en el código.
+1. Generala con la plantilla correspondiente (Plantilla A para portada, Plantilla B para infografía) — ambas en `hackaton_andino/plantilla-imagen-mitos.md`.
+2. Guardala acá con el nombre exacto de la tabla (`mito<N>_portada.jpeg` o `infografia_mito<N>.jpeg`), sobrescribiendo si ya existe.
+3. Avisale al agente si es un archivo nuevo (uno que reemplaza a otro con el mismo nombre no necesita cambios de código).
 
 Esta carpeta no se borra aunque falten imágenes (este README la mantiene versionada en git).

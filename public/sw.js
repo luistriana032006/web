@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v9";
+const CACHE_VERSION = "v10";
 const CACHE_NAME = `hackaton-andino-${CACHE_VERSION}`;
 
 // Todas las rutas reales de la app: se precargan enteras al instalar,
@@ -6,6 +6,20 @@ const CACHE_NAME = `hackaton-andino-${CACHE_VERSION}`;
 const ROUTES_TO_PRECACHE = [
   "/",
   "/mitos",
+  "/mitos/coito-interrumpido",
+  "/mitos/ducha-vaginal",
+  "/mitos/primera-vez",
+  "/mitos/de-pie",
+  "/mitos/descansar-pastillas",
+  "/mitos/pildora-solo-relaciones",
+  "/mitos/pae-abortiva",
+  "/mitos/pae-metodo-regular",
+  "/mitos/diu-se-mueve",
+  "/mitos/diu-cancer",
+  "/mitos/sangre-mala",
+  "/mitos/doble-condon",
+  "/mitos/infertilidad",
+  "/mitos/responsabilidad-mujer",
   "/colombia",
   "/colombia/anticoncepcion",
   "/colombia/consentimiento",
@@ -63,6 +77,20 @@ const STATIC_ASSETS = [
   "/mitos/mito12_portada.jpeg",
   "/mitos/mito13_portada.jpeg",
   "/mitos/mito14_portada.jpeg",
+  "/mitos/infografia_mito1.jpeg",
+  "/mitos/infografia_mito2.jpeg",
+  "/mitos/infografia_mito3.jpeg",
+  "/mitos/infografia_mito4.jpeg",
+  "/mitos/infografia_mito5.jpeg",
+  "/mitos/infografia_mito6.jpeg",
+  "/mitos/infografia_mito7.jpeg",
+  "/mitos/infografia_mito8.jpeg",
+  "/mitos/infografia_mito9.jpeg",
+  "/mitos/infografia_mito10.jpeg",
+  "/mitos/infografia_mito11.jpeg",
+  "/mitos/infografia_mito12.jpeg",
+  "/mitos/infografia_mito13.jpeg",
+  "/mitos/infografia_mito14.jpeg",
 ];
 
 // Descubre y cachea los JS/CSS/fuentes hasheados que Next.js linkea en cada
