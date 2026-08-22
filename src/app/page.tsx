@@ -8,7 +8,7 @@ const COUNTRIES = [
   { name: "Colombia", slug: "colombia", active: true },
   { name: "Ecuador", slug: "ecuador", active: true },
   { name: "Perú", slug: "peru", active: true },
-  { name: "Venezuela", slug: "venezuela", active: false },
+  { name: "Venezuela", slug: "venezuela", active: true },
 ] as const;
 
 export default function Home() {
