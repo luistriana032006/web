@@ -1,4 +1,5 @@
-import { ShieldCheck, MapPin, Lightbulb, Phone } from "lucide-react";
+import Link from "next/link";
+import { ShieldCheck, MapPin, Lightbulb, Phone, Images } from "lucide-react";
 import { TopicShell } from "@/components/topic-shell";
 
 type Contacto = {
@@ -79,6 +80,13 @@ export default function AnticoncepcionPage() {
             incentiva la corresponsabilidad masculina (condón, vasectomía)
           </li>
         </ul>
+        <Link
+          href="/mitos"
+          className="flex w-fit items-center gap-2 text-sm font-medium text-terracota hover:text-terracota/80"
+        >
+          <Images className="size-4 shrink-0" strokeWidth={1.5} />
+          Mira estos mitos como infografías para compartir
+        </Link>
       </div>
 
       <div className="flex flex-col gap-4">
